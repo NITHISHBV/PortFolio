@@ -22,16 +22,14 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 
-  // Initial content reveal animations
+  // Scroll reveal animations
   ScrollReveal({ distance: "100px", duration: 2000, delay: 200 });
   ScrollReveal().reveal(".header a, .profile-photo, .about-content, .education", { origin: "left" });
   ScrollReveal().reveal(".header ul, .profile-text, .about-skills, .internship", { origin: "right" });
   ScrollReveal().reveal(".project-title, .contact-title", { origin: "top" });
   ScrollReveal().reveal(".projects, .contact", { origin: "bottom" });
 
-  
-
-  // Mobile menu toggle
+  // Mobile menu toggle fix for smoother and immediate response
   $(".menu_icon").click(function () {
     $(".header ul").toggleClass("active");
   });
