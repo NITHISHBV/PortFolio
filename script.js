@@ -29,6 +29,8 @@ $(document).ready(function () {
   ScrollReveal().reveal(".header ul, .profile-text, .about-skills, .internship", { origin: "right" });
   ScrollReveal().reveal(".project-title, .skills-title, .contact-title", { origin: "top" });
   ScrollReveal().reveal(".projects, .skills-grid, .contact", { origin: "bottom" });
+  ScrollReveal().reveal(".skill-category", { interval: 150, scale: 0.9 });
+
 
   // Mobile menu toggle
   $(".menu_icon").click(function () {
@@ -57,3 +59,4 @@ $(document).ready(function () {
     });
   }
 });
+
