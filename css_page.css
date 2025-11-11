@@ -454,6 +454,74 @@ profile-photo .img {
 .prj_hd_tit {
   color: rgb(240, 178, 21);
 }
+/*---------------------------Skills Section---------------------------*/
+.skills-content {
+  padding: 90px 0;
+  background-color: #202020;
+  color: #e5e5e5;
+}
+
+.skills-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.skills-title h4 {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+
+.skills-title p {
+  color: #e5e5e5;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-category {
+  flex-basis: 30%;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.skill-category:hover {
+  border-color: #fed700;
+  transform: translateY(-5px);
+}
+
+.skill-category h5 {
+  color: darkgoldenrod;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.skill-category p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* Responsive design for Skills section */
+@media (max-width: 767px) {
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-category {
+    flex-basis: 100%;
+  }
+}
+
 
 /*---------------------------Contact Me---------------------------*/
 .contact-icons {
@@ -617,5 +685,6 @@ profile-photo .img {
     flex-basis: 100%;
     margin-bottom: 30px;
   }
+
 
 }
